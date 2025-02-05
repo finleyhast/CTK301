@@ -1,0 +1,48 @@
+html {
+    background-color:aquamarine;
+}
+
+h1 {
+    background-color:white;
+}
+
+h2 {
+    background-color:white;
+}
+
+h3 {
+    background-color:white;
+}
+
+h4 {
+    background-color: white;
+}
+
+p {
+    background-color:black;
+    color:white;
+}
+
+ul {
+    background-color:white;
+}
+
+.level200 {
+    color:blueviolet;
+}
+
+.level300 {
+    color:cornflowerblue;
+}
+
+a:link {
+    color: red;
+  }
+  
+  a:visited {
+    color: green;
+  }
+  
+  a:hover {
+    color: yellow;
+  }        
