@@ -1,0 +1,57 @@
+a {
+    color:green;
+    text-decoration: none;
+}
+
+a:hover {
+    color:red;
+    text-decoration: underline;
+}
+
+.peri {
+    background-color:#aaabf1
+}
+
+.white {
+    color: white;
+}
+
+.blue {
+    color:blue
+}
+
+.borange {
+    font-weight: bold;
+    color:orange
+}
+
+h3 {
+    background-color: yellow;
+}
+
+#redp {
+    color:red
+}
+
+h4 {
+    background-color: darkgreen;
+    color:yellow;
+}
+
+.greenp {
+    background-color: lightgreen;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+h5 {
+    color:red;
+    font-weight: bold;
+}
+
+.blold {
+    color:blue;
+    font-weight: bold;
+}
