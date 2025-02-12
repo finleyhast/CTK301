@@ -1,0 +1,76 @@
+html {
+    background-color:aquamarine;
+}
+
+h1 {
+    background-color:white;
+}
+
+h2 {
+    background-color:white;
+}
+
+h3 {
+    background-color:white;
+}
+
+h4 {
+    background-color: white;
+}
+
+p {
+    background-color:black;
+    color:white;
+}
+
+ul {
+    background-color:white;
+}
+
+.level200 {
+    color:blueviolet;
+}
+
+.level300 {
+    color:cornflowerblue;
+}
+
+a:link {
+    color: red;
+  }
+  
+  a:visited {
+    color: green;
+  }
+  
+  a:hover {
+    color: yellow;
+  }        
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aquamarine;
+    background-image: url(infinitytrain.webp);
+    background-position: top center;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .justify {
+    text-align: justify;
+  }
+
+  .header {
+    color: orange;
+    font-style: italic;
+    font-weight: normal;
+  }
+
+  .imgbox {
+    border: 20px solid black;
+    background-color: yellow;
+    padding: 20px;
+    width: 500px;
+}
