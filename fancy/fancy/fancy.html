@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Fancy Example</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css"/>
+
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.autoplay.umd.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.autoplay.css"/>
+
+  <link rel="stylesheet" href="fancy.css">
+
+</head>
+
+<body>
+  <div id="wrapper">
+    <h1>Fancy Example</h1>
+
+    <a href="icecream.jpg" data-fancybox="gallery" data-caption="Ice Cream">
+      <img src="icecream_thumb.jpg"/>
+    </a>
+    <!-- data-fancybox not universal, only works with imported fancybox stylesheet 
+     if wanting multiple galleries, rename "gallery" value of data-fancybox to divide content -->
+    
+    <a href="patch.jpg" data-fancybox="gallery" data-caption="Patch">
+      <img src="patch_thumb.jpg"/>
+    </a>
+
+    <a href="water.jpg" data-fancybox="gallery" data-caption="Water">
+      <img src="water_thumb.jpg"/>
+    </a>
+
+    <div class="f-carousel" id="myCarousel">
+      <div class="f-carousel__slide"><img src="icecream.jpg" alt="Ice Cream"></div>
+      <div class="f-carousel__slide"><img src="patch.jpg" alt="Ice Cream"></div>
+      <div class="f-carousel__slide"><img src="water.jpg" alt="Ice Cream"></div>
+    </div>
+    <!-- multiple carousels requires a second grouping of code with unique Id 
+      ( id=myCarousel2  document.getElementById("myCarousel2") ) -->
+    
+  </div>
+
+  <script>
+    Fancybox.bind("[data-fancybox]", {
+    // Your custom options
+    });
+
+    const container = document.getElementById("myCarousel");
+    const options = { infinite: true };
+
+    new Carousel(container, options);
+
+    new Carousel(document.getElementById("myCarousel"), {
+        Autoplay : {
+          timeout : 3000
+        }
+      }, {
+        Autoplay
+      });
+
+  </script>
+
+  <!-- anything with data-fancybox, connect fancybox.bind code and run on site
+   getElementById grabs only first one Id built in (why we can only have one) 
+   infinite:false means carousel won't loop, infinite:true creates content loop -->
+
+</body>
+</html>
