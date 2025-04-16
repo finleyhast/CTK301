@@ -1,0 +1,129 @@
+body {
+  background-color: #999999;
+}
+
+#wrapper {
+  margin: 24px auto;
+  width: 1200px;
+  border: 0px solid black;
+  padding: 24px;
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 24px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+
+main {
+  grid-column: span 8;
+  align-items: start;
+}
+
+h1 {
+  background-color: #DDA8D8;
+  padding: 5px;
+  color: black;
+  grid-column: span 8;
+  text-transform: uppercase;
+  height: 100px;
+}
+
+#top {
+  display: flex;
+}
+
+nav ul {
+  list-style-type: none;
+  grid-column: span 3;
+}
+
+nav li {
+  padding: 5px;
+  margin: 0px;
+  width: 270px;
+  text-align: center;
+}
+
+nav li a {
+  display: block;
+  background-color: #A8DDC8;
+  padding: 20px;
+  margin: 0px;
+  text-transform: uppercase;
+  color: black;
+  text-decoration: none;
+  font-size: large;
+}
+
+#elevator {
+  float: right;
+  grid-column: span 8;
+}
+
+ article {
+  
+  display: flex;
+} 
+
+#plane {
+  float: left;
+  grid-column: span 4;
+}
+
+.mainp {
+  text-wrap: wrap;
+  float: right;
+  grid-column: span 4;
+  width: 368px;
+}
+
+.otherp {
+  text-wrap: wrap;
+  float: left;
+  grid-column: span 4;
+  width: 368px;
+}
+
+#triforce {
+  float: right;
+  grid-column: span 4;
+}
+
+#right {
+  grid-column: span 4;
+  background-color: #A8DDC8;
+   grid-row: span 3; 
+  float: right;
+}
+
+#me {
+  align-content: center;
+}
+
+#about {
+  background-color: white;
+  text-align: justify;
+  margin: 10px;
+  padding: 10px;
+}
+
+.social {
+  grid-column: span 2;
+  font-size: 50px;
+  /* ^ not working? */
+}
+
+h2 {
+  background-color: white;
+  text-align: justify;
+  margin: 10px;
+  padding: 10px;
+}
+
+footer {
+  grid-column: span 8;
+  height: 100px;
+}
+
+/* display:flex for horizontal articles */
