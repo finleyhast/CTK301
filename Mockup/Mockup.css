@@ -7,7 +7,7 @@ body {
   width: 1200px;
   border: 0px solid black;
   padding: 24px;
-  background-color: #ffffff;
+  background-color: white;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 24px;
@@ -23,11 +23,23 @@ main {
 
 h1 {
   background-color: #DDA8D8;
-  padding: 5px;
-  color: black;
-  grid-column: span 8;
   text-transform: uppercase;
   height: 100px;
+  grid-column: span 8;
+  text-align: left;
+  border-radius: 10px;
+}
+
+h1 a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  height: 100px;
+}
+
+h1 a:hover {
+  font-weight: bold;
+  background-color: #b47aae;
 }
 
 .h1two {
@@ -38,6 +50,18 @@ h1 {
   text-transform: uppercase;
   height: 100px;
   border-radius: 10px;
+}
+
+.h1two a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  height: 100px;
+}
+
+.h1two a:hover {
+  font-weight: bold;
+  background-color: #b47aae;
 }
 
 #top {
@@ -52,7 +76,7 @@ nav ul {
 nav li {
   padding: 5px;
   margin: 0px;
-  width: 270px;
+  width: 200px;
   text-align: center;
 }
 
@@ -64,22 +88,32 @@ nav li a {
   text-transform: uppercase;
   color: black;
   text-decoration: none;
-  font-size: large;
+  font-size: larger;
+}
+
+nav li a:hover {
+  background-color: #64AE91;
 }
 
 #elevator {
   float: right;
   grid-column: span 8;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
 
- article {
-  
+article {
+  grid-row: 2;
   display: flex;
+  grid-column: span 8;
 } 
 
-#plane {
+#orleans {
   float: left;
   grid-column: span 4;
+  grid-row: 2;
+  margin-right: 35px;
+  border-radius: 10px;
 }
 
 .mainp {
@@ -87,6 +121,7 @@ nav li a {
   float: right;
   grid-column: span 4;
   width: 368px;
+  margin-right: 10px;
 }
 
 .otherp {
@@ -94,11 +129,14 @@ nav li a {
   float: left;
   grid-column: span 4;
   width: 368px;
+  margin-left: 10px;
 }
 
-#triforce {
+#toronto {
   float: right;
   grid-column: span 4;
+  margin-right: 10px;
+  border-radius: 10px;
 }
 
 #right {
@@ -110,7 +148,7 @@ nav li a {
 
 #left {
   grid-column: span 4;
-  grid-row: span 2;
+  grid-row: span 3;
   float: left;
 }
 
@@ -127,8 +165,21 @@ nav li a {
 
 .social {
   grid-column: span 2;
+}
+
+.social ul a {
   font-size: 50px;
-  /* ^ not working? */
+  display: flex;
+  float: left;
+}
+
+.social ul a:hover {
+  background-color: #A8DDC8;
+  font-size: 60px;
+}
+
+#oswald {
+  float: right;
 }
 
 h2 {
@@ -137,12 +188,19 @@ h2 {
   margin: 10px;
   padding: 10px;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  grid-row: 3;
 }
 
-iframe {
+#bandcamp {
   grid-column: span 9;
   float: right;
 }
+
+.article2 {
+  grid-row: 2;
+  grid-column: span 9;
+  margin-bottom: 15px;
+} 
 
 footer {
   grid-column: span 8;
