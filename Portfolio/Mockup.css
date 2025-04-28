@@ -69,19 +69,19 @@ h1 a:hover {
   display: flex;
 }
 
-nav ul {
+.nav ul {
   list-style-type: none;
   grid-column: span 3;
 }
 
-nav li {
+.nav li {
   padding: 5px;
   margin: 0px;
   width: 200px;
   text-align: center;
 }
 
-nav li a {
+.nav li a {
   display: block;
   background-color: #A8DDC8;
   padding: 20px;
@@ -92,7 +92,7 @@ nav li a {
   font-size: larger;
 }
 
-nav li a:hover {
+.nav li a:hover {
   background-color: #64AE91;
 }
 
@@ -101,6 +101,7 @@ nav li a:hover {
   grid-column: span 8;
   margin-left: 20px;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 article {
@@ -148,13 +149,17 @@ article {
 }
 
 #left {
-  grid-column: span 4;
+  grid-column: span 3;
   grid-row: span 3;
-  float: left;
 }
 
 #me {
   align-content: center;
+}
+
+#mealt {
+  height: 277px;
+  width: 277px;
 }
 
 #about {
@@ -165,22 +170,49 @@ article {
 }
 
 .social {
-  grid-column: span 2;
+  grid-column: span ;
+  list-style: none;
+}
+
+.social ul {
+  list-style-type: none;
 }
 
 .social ul a {
   font-size: 50px;
   display: flex;
   float: left;
+  text-decoration: none;
+  color: black;
+  list-style: none;
 }
 
 .social ul a:hover {
-  background-color: #A8DDC8;
   font-size: 60px;
+}
+
+.socialt {
+  grid-column: span 2;
+}
+
+.socialt ul {
+  list-style-type: none;
+}
+
+.socialt ul a {
+  font-size: 40px;
+  display: flex;
+  float: left;
+  color: black;
+}
+
+.socialt ul a:hover {
+  font-size: 47px;
 }
 
 #oswald {
   float: right;
+  margin: 10px;
 }
 
 h2 {
@@ -195,6 +227,8 @@ h2 {
 #bandcamp {
   grid-column: span 9;
   float: right;
+  margin-top: 40px;
+  margin-left: 15px;
 }
 
 .article2 {
@@ -213,6 +247,17 @@ footer {
   grid-column: span 12;
   height: 100px;
   border-radius: 10px;
+}
+
+#left2 {
+  grid-row: 2;
+  grid-column: span 3;
+}
+
+.form {
+  margin-top: 30px;
+  grid-column: span 9;
+  grid-row: 2;
 }
 
 /* display:flex for horizontal articles */
