@@ -1,0 +1,290 @@
+body {
+  background-color: #999999;
+}
+
+#wrapper {
+  margin: 24px auto;
+  width: 1200px;
+  border: 0px solid black;
+  padding: 24px;
+  background-color: #4B4B4B;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 24px;
+  grid-template-rows: 100px auto 100px;
+  font-family: "EB Garamond", serif;
+  font-style: italic;
+}
+
+main {
+  grid-column: span 8;
+  align-items: start;
+}
+
+h1 {
+  background-color: #B06CA9;
+  text-transform: uppercase;
+  height: 100px;
+  grid-column: span 8;
+  text-align: left;
+  border-radius: 10px;
+}
+
+h1 a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  height: 100px;
+}
+
+h1 a:hover {
+  font-weight: bold;
+  background-color: #875382;
+  border-radius: 10px;
+}
+
+.h1two {
+  background-color: #B06CA9;
+  color: black;
+  grid-column: span 12;
+  text-transform: uppercase;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.h1two a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  height: 100px;
+}
+
+.h1two a:hover {
+  font-weight: bold;
+  background-color: #875382;
+  border-radius: 10px;
+}
+
+#top {
+  display: flex;
+}
+
+.nav {
+  margin-top: 20px;
+}
+
+.nav ul {
+  list-style-type: none;
+  grid-column: span 3;
+}
+
+.nav li {
+  padding: 5px;
+  margin: 0px;
+  width: 200px;
+  text-align: center;
+}
+
+.nav li a {
+  display: block;
+  background-color: #4C9578;
+  padding: 20px;
+  margin: 0px;
+  text-transform: uppercase;
+  color: black;
+  text-decoration: none;
+  font-size: larger;
+}
+
+.nav li a:hover {
+  background-color: #386d58;
+}
+
+#elevator {
+  float: right;
+  grid-column: span 8;
+  margin-left: 80px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  height: 230px;
+  width: auto;
+}
+
+article {
+  grid-row: 2;
+  display: flex;
+  grid-column: span 8;
+} 
+
+#orleans {
+  float: left;
+  grid-column: span 4;
+  grid-row: 2;
+  margin-right: 35px;
+  border-radius: 10px;
+}
+
+.mainp {
+  text-wrap: wrap;
+  float: right;
+  grid-column: span 4;
+  width: 368px;
+  margin-right: 5px;
+  background-color: #bababa;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+.otherp {
+  text-wrap: wrap;
+  float: left;
+  grid-column: span 4;
+  width: 368px;
+  background-color: #bababa;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+#toronto {
+  float: right;
+  grid-column: span 4;
+  margin-left: 35px;
+  border-radius: 10px;
+}
+
+#right {
+  grid-column: span 4;
+  background-color: #4C9578;
+   grid-row: span 3; 
+  float: right;
+}
+
+#left {
+  grid-column: span 3;
+  grid-row: span 3;
+}
+
+#me {
+  align-content: center;
+  margin-left: 28px;
+  margin-top: 9px;
+}
+
+#mealt {
+  height: 277px;
+  width: 277px;
+}
+
+#about {
+  background-color: #bababa;
+  text-align: justify;
+  margin: 10px;
+  padding: 10px;
+}
+
+.social {
+  grid-column: span ;
+  list-style: none;
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+
+.social ul {
+  list-style-type: none;
+}
+
+.social ul a {
+  font-size: 50px;
+  display: flex;
+  float: left;
+  text-decoration: none;
+  color: black;
+  list-style: none;
+}
+
+.social ul a:hover {
+  color: rgb(61, 61, 61);
+}
+
+.socialt {
+  grid-column: span 2;
+  margin-top: 40px;
+}
+
+.socialt ul {
+  list-style-type: none;
+}
+
+.socialt ul a {
+  font-size: 40px;
+  display: flex;
+  float: left;
+  color: black;
+}
+
+.socialt ul a:hover {
+  color: rgb(61, 61, 61)
+}
+
+#oswald {
+  float: right;
+  margin-right: 15px;
+}
+
+h2 {
+  background-color: #bababa;
+  text-align: justify;
+  margin: 10px;
+  padding: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  grid-row: 3;
+  margin-top: 30px;
+  float: bottom;
+  height: 200px;
+}
+
+#bandcamp {
+  grid-column: span 9;
+  float: right;
+  margin-top: 40px;
+  margin-left: 50px;
+}
+
+.article2 {
+  grid-row: 2;
+  grid-column: span 9;
+  margin-bottom: 15px;
+  width: 400px;
+} 
+
+.paudio {
+  width: 500px;
+  background-color: #bababa;
+  padding: 10px;
+}
+
+footer {
+  grid-column: span 8;
+  height: 100px;
+}
+
+.footer2 {
+  grid-column: span 12;
+  height: 100px;
+  border-radius: 10px;
+}
+
+#left2 {
+  grid-row: 2;
+  grid-column: span 3;
+}
+
+.form {
+  margin-top: 30px;
+  grid-column: span 9;
+  grid-row: 2;
+}
+
+/* display:flex for horizontal articles */
